@@ -35,7 +35,8 @@
 <body class="about-page">
 
   <!-- Header -->
-  <header id="header" class="header d-flex align-items-center sticky-top">
+  <header id="header" class="header about-header sticky-top">
+
     <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
@@ -44,7 +45,7 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="services.html">Our Services</a></li>
           <li><a href="gallery.html">Our Projects</a></li>
@@ -64,34 +65,89 @@
 
     </div>
   </header>
+  <!-- ABOUT PAGE HERO / BREADCRUMB -->
+  <section class="page-hero about-hero">
+    <div class="container">
+      <div class="hero-content">
+
+        <!-- Left Title -->
+        <h1>ABOUT</h1>
+
+        <!-- Right Breadcrumb -->
+        <nav class="breadcrumb">
+          <a href="index.html">Home</a>
+          <span>/</span>
+          <a href="about.html" class="active">About</a>
+        </nav>
+
+      </div>
+    </div>
+  </section>
+
 
   <main class="main">
 
     <!-- About Section -->
-    <section id="about" class="about section">
-      <div class="container" data-aos="fade-up">
-        <div class="row justify-content-center align-items-center gy-4">
-          <div class="col-lg-5">
-            <img src="assets/img/gallery/gallery-10.jpg" class="img-fluid" alt="JC Builders">
+    <section id="about" class="about-section section">
+      <div class="container-fluid p-0">
+        <div class="row g-0 align-items-stretch">
+
+          <!-- Left Image -->
+          <div class="col-lg-5 about-image">
+            <img src="assets/img/gallery/gallery-16.png" alt="About JC Builders" class="img-fluid">
           </div>
-          <div class="col-lg-6 content">
-            <h2>About JC Builders</h2>
-            <p>
-              JC Builders is a professional construction company committed to delivering high-quality residential and
-              commercial projects. We focus on client satisfaction, innovative solutions, and maintaining a strong
-              reputation in the industry.
-            </p>
+
+          <!-- Right Content -->
+          <div class="col-lg-7 about-content d-flex align-items-center">
+            <div class="content-wrapper">
+
+              <h2>ABOUT JC BUILDERS</h2>
+
+              <p>
+                We are a construction and interior solutions company delivering
+                premium residential and commercial spaces with a focus on quality,
+                precision, and long-term value.
+              </p>
+
+              <p>
+                From concept planning to execution, our team ensures every project
+                meets client expectations through transparent processes and
+                tailored design solutions.
+              </p>
+
+              <p>
+                With a commitment to craftsmanship and timely delivery, JC Builders
+                transforms ideas into enduring structures.
+              </p>
+
+              <a href="about.html" class="about-btn">
+                READ MORE <i class="bi bi-arrow-right"></i>
+              </a>
+
+            </div>
           </div>
+
         </div>
       </div>
     </section>
 
-    <!-- Services Section -->
-    <!-- Keep as is or include from services.html -->
+
+    <!-- About Section -->
+
+    <!-- TALK WITH US Section -->
+    <section class="cta-strip">
+      <div class="container text-center">
+        <a href="contact.html" class="cta-btn">
+          TALK WITH US <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+    </section>
+    <!-- /TALK WITH US Section -->
+
 
   </main>
-  
-    <!-- Footer Section -->
+
+  <!-- Footer Section -->
 
   <footer id="footer" class="footer-dark">
 
@@ -172,6 +228,27 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const header = document.querySelector(".about-header");
+      const hero = document.querySelector(".about-hero");
+
+      if (!header || !hero) return;
+
+      window.addEventListener("scroll", () => {
+        const heroEnd = hero.offsetTop + hero.offsetHeight;
+        const scrollPos = window.scrollY + header.offsetHeight;
+
+        if (scrollPos < heroEnd) {
+          header.classList.add("is-transparent");
+        } else {
+          header.classList.remove("is-transparent");
+        }
+      });
+    });
+  </script>
+
 
 </body>
 

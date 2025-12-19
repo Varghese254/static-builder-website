@@ -148,6 +148,14 @@ h6 {
 --------------------------------------------------------------*/
 /* ===== Premium Header Style ===== */
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  transition: background-color 0.4s ease, box-shadow 0.4s ease;
+}
+.header {
   background: linear-gradient(180deg, #0c0f12, #090b0d);
   padding: 18px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
@@ -710,7 +718,7 @@ section,
 
 .hero {
   width: 100%;
-  min-height: calc(100vh - 80px); /* IMPORTANT: fills screen */
+  min-height:100vh ; /* IMPORTANT: fills screen */
   position: relative;
   display: flex;
   align-items: center;
@@ -848,13 +856,67 @@ section,
   margin: 0;
 }
 
+/* ==================================
+   ABOUT PAGE HEADER ONLY
+================================== */
+
+.about-page .about-header {
+  background-color: #111;
+  transition: background-color 0.4s ease, padding 0.4s ease;
+  z-index: 999;
+}
+
+/* Transparent state while hero is visible */
+.about-page .about-header.about-transparent {
+  background-color: rgba(0, 0, 0, 0);
+}
+.about-page .page-hero {
+  margin-top: 0;
+}
+.about-hero {
+  position: relative;
+  padding: 120px 0 90px; /* extra top padding for header overlap */
+}
+
+/* INFŸA-style micro text positioning */
+.about-page .about-hero .hero-content {
+  transform: translateY(50px); /* tweak: 14–22px */
+}
+/* Use navbar font for ABOUT texts */
+.about-page .about-hero h1,
+.about-page .about-hero .breadcrumb,
+.about-page .about-hero .breadcrumb a {
+  font-family: 'Inter',' Roboto';
+}
+
+.about-page .about-hero {
+  position: relative;
+  margin-top: -90px; /* pulls hero under header */
+  padding: 210px 0 100px; /* space for header + content */
+  background:
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+    url("../img/gallery/AboutBG.jpeg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+.about-page .about-header {
+  background: #0f0f0f;
+  transition: background 0.4s ease;
+  z-index: 999;
+}
+
+/* Transparent while hero is visible */
+.about-page .about-header.is-transparent {
+  background: transparent;
+}
+
+
 
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
-/*--------------------------------------------------------------
-# About Section (INFYA Style)
---------------------------------------------------------------*/
+
 .about-section {
   background: #111;
   height: 95vh;              /* NOT full screen */
@@ -944,6 +1006,67 @@ section,
 
   .about-content h2 {
     font-size: 28px;
+  }
+}
+/* ----------------------------------
+   PAGE HERO / BREADCRUMB (ABOUT)
+-----------------------------------*/
+
+
+
+
+
+.about-hero .hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ABOUT heading */
+.about-hero h1 {
+  font-size: 36px;
+  letter-spacing: 4px;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.breadcrumb a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.breadcrumb a:hover {
+  color: #fff;
+}
+
+.breadcrumb .active {
+  color: #fff;
+  pointer-events: none;
+}
+
+.breadcrumb span {
+  margin: 0 8px;
+  color: #888;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-hero {
+    padding: 70px 0;
+  }
+
+  .about-hero .hero-content {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
   }
 }
 
