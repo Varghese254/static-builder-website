@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>JC Builders</title>
+  <title>Our Services - JC Builders</title>
   <meta name="description" content="JC Builders – Premium Construction & Design Services">
   <meta name="keywords" content="JC Builders, Construction, Builders, Interior, Architecture">
 
@@ -16,6 +16,8 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Inter:wght@200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
@@ -32,10 +34,10 @@
 
 </head>
 
-<body class="services-page">
+<body class="interior-page">
 
   <!-- Header -->
-  <header id="header" class="header d-flex align-items-center sticky-top">
+  <header id="header" class="header interior-page-header">
     <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
@@ -46,7 +48,7 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Our Services</a></li>
+          <li><a href="services.html" class="active">Our Services</a></li>
           <li><a href="contact.html">Contact Us</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -63,156 +65,239 @@
 
     </div>
   </header>
+  <!-- Interior PAGE HERO / BREADCRUMB -->
+  <section class="interior-page-hero">
+    <div class="container">
+      <div class="hero-content">
 
+        <!-- Left Title -->
+        <h1>OUR SERVICES</h1>
+
+        <!-- Right Breadcrumb -->
+        <nav class="breadcrumb">
+          <a href="index.html">Home</a>
+          <span>/</span>
+          <a href="services.html" class="active">Our Services</a>
+        </nav>
+
+      </div>
+    </div>
+  </section>
   <main class="main">
 
-    <!-- Page Title -->
-    <div class="page-title" data-aos="fade">
-      <div class="heading">
-        <div class="container">
-          <div class="row d-flex justify-content-center text-center">
-            <div class="col-lg-8">
-              <h1>Services</h1>
-              <p class="mb-0">We provide top-notch construction and building services to bring your projects to life.
-              </p>
-            </div>
-          </div>
+    <section class="services">
+
+      <div class="services-item">
+        <div class="services-content">
+          <span class="services-tag">Manufacturing</span>
+          <h2 class="services-title">Paving Tile Manufacturing</h2>
+          <p class="services-text">
+            Complete in-house manufacturing backed by over four decades of industry experience.
+            We produce high-quality concrete paving tiles using precision processes, controlled curing,
+            and strict quality checks to ensure consistent strength, durability, and finish across every batch.
+          </p>
+          <div class="services-badge">IN-HOUSE PRODUCTION</div>
+        </div>
+
+        <div class="services-image">
+          <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80"
+            alt="Manufacturing">
         </div>
       </div>
 
-    </div>
-
-    <!-- Services Section -->
-    <section id="services" class="services section">
-      <div class="container">
-        <div class="row gy-4">
-
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-house-door-fill icon"></i></div>
-              <h4>Residential Construction</h4>
-              <p>Building quality homes with modern architecture and durable materials.</p>
-            </div>
-          </div>
-
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-building icon"></i></div>
-              <h4>Commercial Projects</h4>
-              <p>Designing and constructing offices, shops, and commercial complexes.</p>
-            </div>
-          </div>
-
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-bricks icon"></i></div>
-              <h4>Renovation & Remodeling</h4>
-              <p>Revamping spaces with aesthetic and functional improvements.</p>
-            </div>
-          </div>
-
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-tools icon"></i></div>
-              <h4>Project Management</h4>
-              <p>Efficient planning and execution to ensure timely delivery of projects.</p>
-            </div>
-          </div>
+      <div class="services-item">
+        <div class="services-content">
+          <span class="services-tag">Supply</span>
+          <h2 class="services-title">Paving Tile Supply</h2>
+          <p class="services-text">
+            A direct factory-to-site supply system designed for reliability and efficiency.
+            We support residential, commercial, and large-scale projects with timely delivery,
+            uniform batch supply, and dependable logistics that keep your project moving without delays.
+          </p>
+          <div class="services-badge">FACTORY-TO-SITE SUPPLY</div>
 
         </div>
+
+        <div class="services-image">
+          <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80"
+            alt="Supply">
+        </div>
       </div>
+
+      <div class="services-item">
+        <div class="services-content">
+          <span class="services-tag">Floor Solutions</span>
+          <h2 class="services-title">Floor Brick Tile Solutions</h2>
+          <p class="services-text">
+            Durable and versatile floor brick tiles engineered for both indoor and outdoor applications.
+            Our solutions combine solid concrete construction, load-bearing strength, and refined aesthetics
+            to deliver long-lasting performance for residential, commercial, and industrial flooring needs.
+          </p>
+          <div class="services-badge">OUTDOOR SOLUTIONS</div>
+
+        </div>
+
+        <div class="services-image">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1200&q=80"
+            alt="Floor Solutions">
+        </div>
+      </div>
+
     </section>
 
+    <div class="container service-wb-content">
+
+      <div class="main-white-box premium-shell">
+        <div class="contact-image-bg"></div>
 
 
-    </div>
-    <div class="swiper-pagination"></div>
-    </div>
-    </div>
-    </section>
-
-  </main>
-
-  <!-- Footer -->
-
-  <footer id="footer" class="footer-dark">
-
-    <div class="container">
-      <div class="row gy-4">
-
-        <!-- Brand -->
-        <div class="col-lg-4">
-          <h2 class="footer-logo">JC BUILDERS</h2>
-          <p class="footer-text">
-            We are a construction and interior solutions company delivering premium
-            residential and commercial spaces with precision and trust.
+        <div class="process-header">
+          <span class="process-eyebrow">JC BUILDERS · OUR PROCESS</span>
+          <h2>Effortless Process.<br>Reliable Supply.</h2>
+          <p>
+            A streamlined approach built on four decades of experience,
+            ensuring consistency, quality, and on-time delivery.
           </p>
         </div>
 
-        <!-- Quick Links -->
-        <div class="col-lg-4">
-          <h4 class="footer-title">QUICK LINKS</h4>
-          <ul class="footer-links">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Our Services</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-          </ul>
-        </div>
+        <div class="process-steps">
 
-        <!-- Contact -->
-        <div class="col-lg-4 footer-contact">
-          <h4 class="footer-title">CONTACT US</h4>
-
-          <div class="line">
-            <p>Kochi, Kerala</p>
+          <div class="process-step">
+            <span class="step-index">01</span>
+            <h5>Requirement Analysis</h5>
+            <p>Understanding project needs, load requirements, and application areas.</p>
           </div>
 
-          <div class="line">
-            <p><strong>Phone:</strong> +91 XXXXX XXXXX</p>
+          <div class="process-step">
+            <span class="step-index">02</span>
+            <h5>Manufacturing</h5>
+            <p>In-house production ensures consistency, strength, and finish.</p>
           </div>
 
-          <div class="line">
-            <p><strong>Email:</strong> info@jcbuilder.com</p>
+          <div class="process-step">
+            <span class="step-index">03</span>
+            <h5>Quality Assurance</h5>
+            <p>Every batch is tested for durability, thickness, and uniformity.</p>
           </div>
+
+          <div class="process-step">
+            <span class="step-index">04</span>
+            <h5>Timely Delivery</h5>
+            <p>Reliable supply schedules for residential and commercial projects.</p>
+          </div>
+
         </div>
 
       </div>
     </div>
 
-    <!-- Bottom -->
-    <div class="footer-bottom">
-      <div class="container d-flex justify-content-between align-items-center">
-        <p>© Copyright <strong>JC Builders</strong>. All Rights Reserved</p>
+    
 
-        <div class="footer-social">
-          <a href="#"><i class="bi bi-facebook"></i></a>
-          <a href="#"><i class="bi bi-instagram"></i></a>
-          <a href="#"><i class="bi bi-linkedin"></i></a>
+    <!-- Footer -->
+
+    <footer id="footer" class="footer-dark">
+
+      <div class="container">
+        <div class="row gy-4">
+
+          <!-- Brand -->
+          <div class="col-lg-4">
+            <h2 class="footer-logo">JC BUILDERS</h2>
+            <p class="footer-text">
+              We are a construction and interior solutions company delivering premium
+              residential and commercial spaces with precision and trust.
+            </p>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-lg-4">
+            <h4 class="footer-title">QUICK LINKS</h4>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html" class="active">Our Services</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+          <div class="col-lg-4 footer-contact">
+            <h4 class="footer-title">CONTACT US</h4>
+
+            <div class="line">
+              <p>Kochi, Kerala</p>
+            </div>
+
+            <div class="line">
+              <p><strong>Phone:</strong> +91 XXXXX XXXXX</p>
+            </div>
+
+            <div class="line">
+              <p><strong>Email:</strong> info@jcbuilder.com</p>
+            </div>
+          </div>
+
         </div>
       </div>
+
+      <!-- Bottom -->
+      <div class="footer-bottom">
+        <div class="container d-flex justify-content-between align-items-center">
+          <p>© Copyright <strong>JC Builders</strong>. All Rights Reserved</p>
+
+          <div class="footer-social">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="line"></div>
     </div>
 
-  </footer>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const header = document.querySelector(".interior-page-header");
+        const heroContent = document.querySelector(".interior-page-hero .hero-content");
 
-  <!-- Preloader -->
-  <div id="preloader">
-    <div class="line"></div>
-  </div>
+        if (!header || !heroContent) return;
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+        function handleScroll() {
+          const headerHeight = header.offsetHeight;
+          const heroTextTop = heroContent.getBoundingClientRect().top;
 
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+          // EXACT INFYA BEHAVIOR:
+          // When hero text touches navbar -> header becomes solid
+          if (heroTextTop <= headerHeight) {
+            header.classList.remove("is-transparent");
+          } else {
+            header.classList.add("is-transparent");
+          }
+        }
+
+        window.addEventListener("scroll", handleScroll);
+        handleScroll(); // run once on load
+      });
+    </script>
 
 </body>
 
