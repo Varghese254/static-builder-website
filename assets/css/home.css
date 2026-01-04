@@ -378,6 +378,56 @@
 }
 
 /*--------------------------------------------------------------
+# Mobile Fix - Hero Fullscreen & About Image Position
+# Desktop view remains completely unchanged
+--------------------------------------------------------------*/
+@media (max-width: 768px) {
+  /* Ensure hero takes full viewport */
+  .hero {
+    height: 100vh !important;
+    min-height: 100vh !important;
+    max-height: 100vh !important;
+  }
+  
+  /* Push About section down by one full viewport */
+  .about-section {
+    position: relative;
+    margin-top: 100vh; /* This pushes it exactly one screen down */
+  }
+  
+  /* Add small spacing as requested */
+  .about-section .container-fluid {
+    padding-top: 20px;
+  }
+  
+  /* Ensure About image is visible (it will be below the fold) */
+  .about-section .col-lg-5.about-image {
+    display: block !important;
+  }
+  
+  /* Make content stack properly on mobile */
+  .about-section .row {
+    flex-direction: column;
+  }
+  
+  .about-section .col-lg-5,
+  .about-section .col-lg-7 {
+    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  
+  /* Image should come first on mobile */
+  .about-section .col-lg-5.about-image {
+    order: 1;
+  }
+  
+  .about-section .col-lg-7.about-content {
+    order: 2;
+  }
+}
+
+/*--------------------------------------------------------------
 # Responsive Design - Home Page
 --------------------------------------------------------------*/
 @media (max-width: 1200px) {
@@ -407,7 +457,6 @@
     padding-top: 20px;
     margin-top: 20px;
   }
-  /* REMOVED: About section responsive styles */
   .home-services-section {
     padding: 90px 0;
   }
@@ -422,8 +471,8 @@
 
 @media (max-width: 768px) {
   .hero {
-    height: 80vh;
-    min-height: 500px;
+    height: 100vh !important;
+    min-height: 100vh !important;
   }
   .hero-main-title {
     font-size: 2.4rem;
@@ -476,8 +525,8 @@
 
 @media (max-width: 576px) {
   .hero {
-    height: 70vh;
-    min-height: 400px;
+    height: 100vh !important;
+    min-height: 100vh !important;
   }
   .hero-main-title {
     font-size: 2rem;
